@@ -1,5 +1,5 @@
 {
-  "description": "Merges all your social media apps into one timeline",
+  "description": "Das Frontend einer Applikation zur Verwaltung der Belegung der Klausurräume des Kaufmännischen Berufskollegs Duisburg-Mitte",
   "repository": "github:iammajo/raumplanung-frontend",
   "license": "UNLICENSED",
   "dependencies": {
