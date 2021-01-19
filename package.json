@@ -1,0 +1,15 @@
+{
+  "description": "Merges all your social media apps into one timeline",
+  "repository": "github:iammajo/raumplanung-frontend",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "husky": "^4.3.8",
+    "prettier": "2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --no-resolve-config --staged"
+    }
+  }
+}
