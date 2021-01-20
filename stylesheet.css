@@ -1,0 +1,97 @@
+body {
+    background-color: aliceblue;
+}
+
+.gridLayout {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-column: 1/span 2;
+    grid-row: 1;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: 2px white;
+}
+
+#leftHeader {
+    margin: 5px;
+    grid-column: 1;
+}
+
+#rightHeader {
+    margin: 5px;
+    grid-column: 3;
+}
+
+#nav {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: 2px white;
+    max-width: 150px;
+    margin-top: 15px;
+}
+
+.roomContainer p {
+    border-style: solid;
+    border-color: darkcyan;
+}
+
+.roomContainer p:hover {
+    cursor: pointer;
+}
+
+#calender {
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: 2px white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 45px 1fr;
+    align-items: start;
+    justify-items: center;
+}
+
+#calenderSlot1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#calenderSlot2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#calenderSlot3 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#calenderSlot4 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#calenderSlot5 {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+#calenderSlot6 {
+    grid-column: 6;
+    grid-row: 2;
+}

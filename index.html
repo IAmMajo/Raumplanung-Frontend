@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Anzeige von Umlauten -->
+        <meta charset = "utf-8">
+        <!-- Automatische Anpassung der Bildschirmauflösung -->
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <!-- Einbindung CSS File -->
+        <link rel = "stylesheet" href = "stylesheet.css">
+        <!-- Tabname -->
+        <title>KBM Raumplanung</title>
+    </head>
+    <body>
+        <div class="gridLayout">
+            <div id="header">
+                <div id="leftHeader">
+                    <img src="kbm.jpg">
+                </div>
+                <div id="rightHeader">
+                    <p>Anmeldename</p>
+                    <button type="button" id="loginButton" onclick="console.log('Jup')">Login</button>
+                </div>
+            </div>
+            <div id="nav">
+                <div class="roomContainer">
+                    <p id="testingRoomLog" onclick="console.log(getElementById('testingRoomLog').innerHTML + ' selected')">Raum 234</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                    <p>Raum XXX</p>
+                </div>
+            </div>
+            <div id="calender">
+                <div id="calenderSlot1">
+                    <p>Cookie</p>
+                </div>
+                <div id="calenderSlot2">
+                    <p>Cookie</p>
+                </div>
+                <div id="calenderSlot3">
+                    <p>Cookie</p>
+                </div>
+                <div id="calenderSlot4">
+                    <p>Cookie</p>
+                </div>
+                <div id="calenderSlot5">
+                    <p>Cookie</p>
+                </div>
+                <div id="calenderSlot6">
+                    <p>Cookie</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
