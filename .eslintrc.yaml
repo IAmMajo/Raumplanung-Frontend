@@ -90,7 +90,6 @@ rules:
         allowArrayEnd: true,
         allowClassStart: true,
         allowClassEnd: true,
-        applyDefaultIgnorePatterns: false,
       },
     ]
   lines-between-class-members: error
@@ -140,5 +139,6 @@ rules:
   prefer-template: error
   sort-imports: error
   symbol-description: error
+reportUnusedDisableDirectives: true
 root: true
 extends: [eslint:recommended, prettier]
