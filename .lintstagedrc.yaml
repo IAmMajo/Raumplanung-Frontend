@@ -1,0 +1,1 @@
+"*.js": eslint --fix --max-warnings=0 --no-inline-config
