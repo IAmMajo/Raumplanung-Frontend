@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <!-- Einbindung CSS File -->
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <!-- Tabname -->
     <title>KBM Raumplanung</title>
   </head>
@@ -40,26 +44,27 @@
           <p>Raum XXX</p>
         </div>
       </div>
-      <div id="calender">
-        <div id="calenderSlot1">
-          <p>Cookie</p>
-        </div>
-        <div id="calenderSlot2">
-          <p>Cookie</p>
-        </div>
-        <div id="calenderSlot3">
-          <p>Cookie</p>
-        </div>
-        <div id="calenderSlot4">
-          <p>Cookie</p>
-        </div>
-        <div id="calenderSlot5">
-          <p>Cookie</p>
-        </div>
-        <div id="calenderSlot6">
-          <p>Cookie</p>
+      <div class="container">
+        <div class="calender">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Mo</div>
+            <div>Di</div>
+            <div>Mi</div>
+            <div>Do</div>
+            <div>Fr</div>
+            <div>Sa</div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

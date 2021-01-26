@@ -51,47 +51,53 @@ body {
   cursor: pointer;
 }
 
-#calender {
-  margin-top: 15px;
-  margin-left: 15px;
-  background-color: lightgray;
-  box-shadow: 5px 5px 5px gray;
-  border-radius: 10px;
-  border-style: inset;
-  border-color: 2px white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 45px 1fr;
-  align-items: start;
-  justify-items: center;
+.month {
+  height: 125px;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
 }
 
-#calenderSlot1 {
-  grid-column: 1;
-  grid-row: 2;
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
 }
 
-#calenderSlot2 {
-  grid-column: 2;
-  grid-row: 2;
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
 }
 
-#calenderSlot3 {
-  grid-column: 3;
-  grid-row: 2;
+.month p {
+  font-size: 1.6rem;
 }
 
-#calenderSlot4 {
-  grid-column: 4;
-  grid-row: 2;
+.weekdays {
+  width: 1fr;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#calenderSlot5 {
-  grid-column: 5;
-  grid-row: 2;
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: calc(84rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#calenderSlot6 {
-  grid-column: 6;
-  grid-row: 2;
+.container {
+  background-color: black;
+  color: #eee;
+  margin: 15px;
 }
