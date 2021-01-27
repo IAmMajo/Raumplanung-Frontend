@@ -21,7 +21,7 @@ const renderCalendar = () => {
 
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
-  document.querySelector(".date p").innerHTML = new Date().toDateString();
+  document.querySelector(".date p").innerHTML = new Date().toLocaleDateString();
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
@@ -35,3 +35,15 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+// Get the modal
+
+const modal = document.getElementById("id01");
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function (event1) {
+  if (event1.target === modal) {
+    modal.style.display = "none";
+  }
+};
