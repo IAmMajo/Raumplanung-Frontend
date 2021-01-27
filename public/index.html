@@ -34,7 +34,7 @@
         <div class="roomContainer">
           <p
             id="testingRoomLog"
-            onclick="console.log(getElementById('testingRoomLog').innerHTML + ' selected')"
+            onclick="document.getElementById('id02').style.display='block'"
           >
             Raum 234
           </p>
@@ -88,9 +88,6 @@
           />
 
           <button type="submit">Login</button>
-        </div>
-
-        <div class="container">
           <button
             type="button"
             onclick="document.getElementById('id01').style.display='none'"
@@ -101,6 +98,58 @@
         </div>
       </form>
     </div>
-    <script src="main.js"></script>
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="" method="get">
+        <div class="container">
+          <label for="roomNames"><b>Raumname</b></label>
+          <select
+            name="roomsDrop"
+            placeholder="Raum aussuchen"
+            id="roomName"
+            required
+          >
+            <option value="XYZ">XYZ</option>
+            <option value="ABC">ABC</option>
+            <option value="QWE">QWE</option>
+          </select>
+
+          <label for="participantsCount"><b>Teilnehmer Anzahl</b></label>
+          <input
+            type="number"
+            placeholder="Anzahl Teilnehmer"
+            name="participants"
+            min="0"
+            oninput="validity.valid||(value='')"
+            required
+          />
+
+          <label for="supervisionTeacher"><b>Aufsicht</b></label>
+          <select
+            name="supervisionDrop"
+            placeholder="Aufsicht"
+            id="supervision"
+            required
+          >
+            <option value="XYZ">XYZ</option>
+            <option value="ABC">ABC</option>
+            <option value="QWE">QWE</option>
+          </select>
+
+          <label for="start">Beginn</label>
+          <input type="time" id="timeInputStart" name="timeStart" />
+          <label for="end">Ende</label>
+          <input type="time" id="timeInputEnd" name="timeEnd" />
+          <button type="submit">Buchen</button>
+          <button
+            type="button"
+            onclick="document.getElementById('id02').style.display='none'"
+            class="cancelbtn"
+          >
+            Abbrechen
+          </button>
+        </div>
+        <script src="main.js"></script>
+      </form>
+    </div>
   </body>
 </html>
