@@ -3,7 +3,7 @@
   "repository": "github:iammajo/raumplanung-frontend",
   "license": "UNLICENSED",
   "dependencies": {
-    "eslint": "^7.18.0",
+    "eslint": "~7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
