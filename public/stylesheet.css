@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+  background-color: black;
 }
 
 .gridLayout {
@@ -13,11 +13,11 @@ body {
   grid-template-columns: 150px 1fr 150px;
   grid-column: 1 / span 2;
   grid-row: 1;
-  background-color: lightgray;
-  box-shadow: 5px 5px 5px gray;
+  background-color: black;
   border-radius: 10px;
   border-style: inset;
-  border-color: 2px white;
+  border-color: 2px grey;
+  color: white;
 }
 
 #leftHeader {
@@ -33,8 +33,8 @@ body {
 #nav {
   grid-column: 1;
   grid-row: 2;
-  background-color: lightgray;
-  box-shadow: 5px 5px 5px gray;
+  background-color: black;
+  color: white;
   border-radius: 10px;
   border-style: inset;
   border-color: 2px white;

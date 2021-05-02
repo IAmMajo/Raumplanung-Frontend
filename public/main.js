@@ -21,7 +21,7 @@ const renderCalendar = () => {
 
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
 
-  document.querySelector(".date p").innerHTML = new Date().toLocaleDateString();
+  document.querySelector(".date p").innerHTML = 'Ausgewähltes Datum ' + new Date().toLocaleDateString();
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
